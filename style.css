@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +8,120 @@
 }
 
 :root {
+  /* Blue-greys, darkest to lightest */
+  --almost-black: hsl(214 37% 4%);
+  --blue-black: hsl(210 39% 7%);
+  --dark-slate: hsl(211 30% 13%);
+  --dark-grey-blue: hsl(211 22% 24%);
+  --medium-grey-blue: hsl(210 18% 42%);
+  --grey-blue: hsl(211 14% 50%);
+  --soft-grey-blue: hsl(211 13% 55%);
+  --light-grey-blue: hsl(211 18% 68%);
+  --icy-blue: hsl(208 49% 92%);
+  --off-white: hsl(204 60% 97%);
+
+  /* Lime */
+  --neon-lime: hsl(77 90% 59%);
+  --olive-lime: hsl(77 67% 39%);
+
+  /* Red and yellow */
+  --coral-red: hsl(4 100% 74%);
+  --golden-yellow: hsl(40 100% 65%);
+
+  /* Navy */
+  --deep-navy: hsl(214 60% 2%);
+
+  /* See-through versions */
+  --neon-lime-60: hsl(77 90% 59% / 0.6);
+  --neon-lime-40: hsl(77 90% 59% / 0.4);
+  --deep-navy-80: hsl(214 60% 2% / 0.8);
+  --deep-navy-60: hsl(214 60% 2% / 0.6);
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: clamp(24px, 6vh, 64px) clamp(24px, 6vw, 96px);
+  background-color: var(--almost-black);
+  background-image: url("assets/images/pattern-backdrop.svg");
+  background-repeat: no-repeat;
+  background-position: right -300px center;
+  background-size: 60%;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.detail-box {
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  background-color: var(--blue-black);
+  padding: 32px;
+  border: 1px solid var(--dark-grey-blue);
+}
+
+.signup-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--dark-grey-blue);
+  padding-bottom: 16px;
+}
+
+.signup-header h3 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.signup-header p {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+}
+
+.input-wrapper {
+  margin: 8px 0;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--soft-grey-blue);
+  gap: 8px;
+  overflow: hidden;
+  background-color: var(--almost-black);
+}
+
+input {
+  display: block;
+  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  caret-color: var(--neon-lime);
+  background-color: var(--almost-black);
+}
+
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 800;
 }

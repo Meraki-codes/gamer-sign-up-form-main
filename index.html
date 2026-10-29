@@ -26,135 +26,153 @@
 
         <div class="join-nexus">
           <div class="main-text">
-            <h1><span class="slash">//</span>Join the Nexus</h1>
+            <h1>
+              <span class="slash">//</span
+              ><span class="nowrap">Join the</span> Nexus
+            </h1>
           </div>
 
           <p>Initialize your Neoncore identity</p>
         </div>
 
-        <div class="operator-id-strip">
+        <div class="operator-strip">
           <div class="operator-id">
             <p>Operator ID</p>
 
             <p class="count"><span class="ready-count">0</span>/5 ready</p>
           </div>
-          <div>
+          <div class="main-status">
             <h2 class="operator-name">Unassigned</h2>
             <div class="status-details">
               <div class="status-group">
-                <div>
-                  <p>Callsign</p>
-                  <span></span>
-                  <div>Pending</div>
-                </div>
+                <p>Callsign</p>
+                <span class="line"></span>
+                <div>Pending</div>
               </div>
               <div class="status-group">
-                <div>
-                  <p>Email</p>
-                  <span></span>
-                  <div>Pending</div>
-                </div>
+                <p>Email</p>
+                <span class="line"></span>
+                <div>Pending</div>
               </div>
               <div class="status-group">
-                <div>
-                  <p>Password</p>
-                  <span></span>
-                  <div>Pending</div>
-                </div>
+                <p>Password</p>
+                <span class="line"></span>
+                <div>Pending</div>
               </div>
               <div class="status-group">
-                <div>
-                  <p>Confirm</p>
-                  <span></span>
-                  <div>Pending</div>
-                </div>
+                <p>Confirm</p>
+                <span class="line"></span>
+                <div>Pending</div>
               </div>
               <div class="status-group">
-                <div>
-                  <p>Terms</p>
-                  <span></span>
-                  <div>Required</div>
-                </div>
+                <p>Terms</p>
+                <span class="line"></span>
+                <div>Required</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="signup-form">
-        <div class="signup-header">
-          <h3>New operator</h3>
-          <p>All fields required</p>
-        </div>
-        <div class="signup-group">
-          <label for="callsign"
-            ><span class="greater-than">&gt;</span> Callsign</label
-          >
-          <div class="input-wrapper">
-            <input type="text" id="callsign" placeholder="e.g. Vortex_07" />
+      <div class="forms">
+        <div class="signup-form">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <div class="signup-header">
+            <h3>New operator</h3>
+            <p>All fields required</p>
           </div>
-          <small class="hint">3-20 characters: letters, numbers, _ or -</small>
-        </div>
-
-        <div class="signup-group">
-          <label for="email"
-            ><span class="greater-than">&gt;</span> Email</label
-          >
-          <div class="input-wrapper">
-            <input type="email" id="email" placeholder="you@example.com" />
-          </div>
-        </div>
-
-        <div class="signup-group">
-          <label for="password"
-            ><span class="greater-than">&gt;</span> Password</label
-          >
-
-          <div class="input-wrapper">
-            <input type="password" id="password" />
-            <span class="show-password"
-              ><img src="assets/images/icon-eye.svg" alt=""
-            /></span>
+          <div class="signup-group">
+            <label for="callsign"
+              ><span class="greater-than">&gt;</span> Callsign</label
+            >
+            <div class="input-wrapper">
+              <input type="text" id="callsign" placeholder="e.g. Vortex_07" />
+            </div>
+            <small class="hint"
+              >3-20 characters: letters, numbers, _ or -</small
+            >
           </div>
 
-          <div class="dash-container">
-            <span class="dash one"></span>
-            <span class="dash two"></span>
-            <span class="dash three"></span>
-            <span class="dash four"></span>
+          <div class="signup-group">
+            <label for="email"
+              ><span class="greater-than">&gt;</span> Email</label
+            >
+            <div class="input-wrapper">
+              <input type="email" id="email" placeholder="you@example.com" />
+            </div>
           </div>
 
-          <small>At least 8 characters</small>
-        </div>
+          <div class="signup-group">
+            <label for="password"
+              ><span class="greater-than">&gt;</span> Password</label
+            >
 
-        <div class="signup-group">
-          <label for="confirm-password"
-            ><span class="greater-than">&gt;</span> Confirm password</label
-          >
+            <div class="input-wrapper">
+              <input type="password" id="password" />
+              <span class="show-password"
+                ><img src="assets/images/icon-eye.svg" alt=""
+              /></span>
+            </div>
 
-          <div class="input-wrapper">
-            <input type="password" id="confirm-password" />
-            <span class="show-password"
-              ><img src="assets/images/icon-eye.svg" alt=""
-            /></span>
+            <div class="dash-container">
+              <span class="dash one"></span>
+              <span class="dash two"></span>
+              <span class="dash three"></span>
+              <span class="dash four"></span>
+            </div>
+
+            <small>At least 8 characters</small>
+          </div>
+
+          <div class="signup-group">
+            <label for="confirm-password"
+              ><span class="greater-than">&gt;</span> Confirm password</label
+            >
+
+            <div class="input-wrapper">
+              <input type="password" id="confirm-password" />
+              <span class="show-password"
+                ><img src="assets/images/icon-eye.svg" alt=""
+              /></span>
+            </div>
+          </div>
+
+          <div class="checkbox-option">
+            <input type="checkbox" id="terms" />
+            <label for="terms"
+              >I accept the <a href="#">Terms</a> and
+              <a href="#">Privacy Policy</a></label
+            >
+          </div>
+
+          <div class="signup-group">
+            <button type="submit">Initialize account</button>
+          </div>
+
+          <div class="already-user">
+            <p>Already an operator?</p>
+            <a href="#">Log in</a>
           </div>
         </div>
 
-        <div class="checkbox-option">
-          <input type="checkbox" id="terms" />
-          <label for="terms"
-            >I accept the <a href="#">Terms</a> and
-            <a href="#">Privacy Policy</a></label
-          >
-        </div>
-
-        <div class="signup-group">
-          <button type="submit">Initialize account</button>
-        </div>
-
-        <div class="already-user">
-          <p>Already an operator?</p>
-          <a href="#">Log in</a>
+        <div class="completion-form hidden">
+          <span class="corner tl"></span>
+          <span class="corner tr"></span>
+          <span class="corner bl"></span>
+          <span class="corner br"></span>
+          <span class="checkmark">
+            <img src="assets/images/icon-hex-check.svg" alt="" />
+          </span>
+          <h2 class="handshake">
+            <span class="slash">//</span> Handshake Complete
+          </h2>
+          <p>
+            Operator <span class="username">NeonRaider_99</span> provisioned.
+            Your account is ready
+          </p>
+          <button type="submit">Continue to Log In</button>
         </div>
       </div>
     </div>

@@ -49,7 +49,7 @@ body {
   background-image: url("assets/images/pattern-backdrop.svg");
   background-repeat: no-repeat;
   background-position: right -300px center;
-  background-size: 60%;
+  background-size: 50%;
   color: white;
 }
 
@@ -100,7 +100,7 @@ body {
 
 .input-wrapper {
   margin: 8px 0;
-  padding: 4px 16px;
+  padding: 4px 12px;
   display: flex;
   align-items: center;
   border: 1px solid var(--soft-grey-blue);
@@ -109,7 +109,7 @@ body {
   background-color: var(--almost-black);
 }
 
-input {
+.input-wrapper input {
   display: block;
   width: 100%;
   flex: 1;
@@ -120,8 +120,76 @@ input {
   background-color: var(--almost-black);
 }
 
+input::placeholder {
+  font-size: 16px;
+}
+
 h1,
 h2 {
   font-family: "Orbitron", sans-serif;
   font-weight: 800;
+}
+
+label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--light-grey-blue);
+}
+
+.greater-than {
+  color: var(--neon-lime);
+}
+
+small {
+  color: var(--light-grey-blue);
+}
+
+.dash-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.dash {
+  height: 4px;
+  background-color: var(--soft-grey-blue);
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.checkbox-option input {
+  accent-color: var(--neon-lime);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+a:any-link {
+  color: var(--neon-lime);
+}
+
+button[type="submit"] {
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  background-color: var(--neon-lime);
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.already-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
